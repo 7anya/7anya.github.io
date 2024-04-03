@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
@@ -19,6 +20,7 @@ group :jekyll_plugins do
     gem 'mini_racer'
     gem 'unicode_utils'
     gem 'webrick'
+    gem "github-pages", "~> 215"
 end
 group :other_plugins do
     gem 'feedjira'
